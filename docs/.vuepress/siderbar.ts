@@ -17,6 +17,9 @@ const sider: SidebarConfig = {
         "/web/tools/tapable"
       ]
     },
+  ],
+  "/todo": [
+    "/todo"
   ]
 };
 

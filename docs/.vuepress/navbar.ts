@@ -4,6 +4,10 @@ const navbar: NavbarConfig = [
   {
     text: "Web前端",
     link: "/web/javascript/gcc"
+  },
+  {
+    text: "TODO",
+    link: "/todo"
   }
 ];
 
