@@ -1,6 +1,25 @@
 # TODO List
 
-+ [zx](https://github.com/google/zx) 可以在 `shell` 脚本中写 `JavaScript` 的工具。
+## 22.01.27
+
++ [remix](https://remix.run/) Remix是一个全栈的 web 框架，它可以让你专注于用户界面，并通过 web 基础来提供一个快速、灵活、有弹性的用户体验，可以部署到任何 Node.js 服务器，甚至非 Node.js 环境的 edge。
++ [Parcel](https://parceljs.org/) 新的打包工具，完全零配置、构建速度更快。
++ [astro](https://astro.build/) 静态站点生成工具，留下较少的Javascript生成HTML，自动精简页面，天然支持各种流行框架。
++ [umbrellajs](https://umbrellajs.com/) 是 JQuery 的超轻量级代替品。
++ [Scala.js](https://www.scala-js.org/) 兼具面向对象和函数式编程的 Scala 进军Javascript，原本是基于Java虚拟机 JVM 上的编程语言，现在带来了 Scala.js。在前端也可以使用Scala的编程方式。
++ [TinyBase](https://tinybase.org/) 结构化状态库 TinyBase。可以灵活方便的管理多种数据结构的 React State 状态。
++ [Sharer.js](https://ellisonleao.github.io/sharer.js/) 社交媒体分享组件 Sharer.js。主要支持海外社交媒体。
++ [mo.js](https://mojs.github.io/) 是一个逐帧动画控制动态图形库。
++ [Rockpack](https://alexsergey.github.io/rockpack/) 是一个 react 服务端渲染库。
++ [vue-easytable](https://happy-coding-clans.github.io/vue-easytable) 是基于vue的数据表格库。解决大数据表格的性能问题。
++ [react-calendar](https://projects.wojtekmaj.pl/react-calendar/) 轻量级，可定制，支持多种语言免费开源的日历组件。
++ [rasterizeHTML.js](http://cburgmer.github.io/rasterizeHTML.js/) 可以在 canvas 中渲染 html。
++ [discord.js](https://discord.js.org/) 是一个 Discord API 集成库。
++ [nodeBB](https://nodebb.org/) 是基于 Node.js 的开源论坛系统，支持多种数据库和可选模板。
+
+## 22.01.10
+
++ [zx](https://github.com/google/zx) 可以在 `JavaScript` 脚本中写 `shell` 的工具。
 + [Next.js](https://nextjs.org/) React 的混合渲染及构建框架。
 + [Svelte](https://www.sveltejs.cn/) 通过静态编译减少框架运行时的代码量的框架。
 + [Tauri](https://tauri.studio/en/) 一个桌面级应用框架。使用 WebView 作为 UI，以及基于 Rust 的 API。

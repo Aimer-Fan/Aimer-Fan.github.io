@@ -103,34 +103,11 @@ btn1 btn2 undefined
 
 ## 解决办法
 
-+ 将每个 button 都添加 key。使得 vue diff 的时候不再将 btn3 替换为 btn2。而是重新创建元素。
-
-+ 修改自定义指令的实现。将没有权限的元素改为注释节点，而不是直接删除改元素。
-
-修改的代码为
++ 使用 `v-show` 替代 `v-if`。
++ 不要将 `v-permission` 和 `v-if` 放在同一个层级下。
 
 ```javascript
-Vue.directive('permission', (el, binding, vnode) => {
-  if (!whiteList.includes(binding.arg)) {
-    // replace HTMLElement with comment node
-    const comment = document.createComment(' ');
-    Object.defineProperty(comment, 'setAttribute', {
-      value: () => undefined,
-    });
-    vnode.elm = comment;
-    vnode.text = ' ';
-    vnode.isComment = true;
-    vnode.context = undefined;
-    vnode.tag = undefined;
-    vnode.data.directives = undefined;
-
-    if (vnode.componentInstance) {
-      vnode.componentInstance.$el = comment;
-    }
-
-    if (el.parentNode) {
-      el.parentNode.replaceChild(comment, el);
-    }
-  }
-});
+<div v-permission:btn1>
+  <a-button v-if="showBtn1" type="primary">Button1</a-button>
+</div>
 ```
