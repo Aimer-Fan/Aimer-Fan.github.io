@@ -10,7 +10,7 @@ const navbar: NavbarConfig = [
     link: "/tools/tapable",
   },
   {
-    text: "案例分析",
+    text: "草稿箱",
     link: "/drafts/permission",
   },
   {
