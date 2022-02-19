@@ -4,6 +4,7 @@ const sider: SidebarConfig = {
   "/web": [
     "/web/gcc",
     "/web/regexp",
+    "/web/vue3-reactivity",
   ],
   "/tools": [
     "/tools/tapable",
