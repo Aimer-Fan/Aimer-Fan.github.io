@@ -6,6 +6,7 @@ const sider: SidebarConfig = {
     "/web/regexp",
     "/web/vue3-reactivity",
     "/web/cache",
+    "/web/qiankun",
   ],
   "/tools": [
     "/tools/tapable",
