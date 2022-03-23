@@ -20,6 +20,10 @@ const sider: SidebarConfig = {
       text: "brew 更换源",
       link: "/drafts/brew-change-origin",
     },
+    {
+      text: "搭建VPS",
+      link: "/drafts/vps",
+    },
   ],
   "/todo": [
     "/todo",
