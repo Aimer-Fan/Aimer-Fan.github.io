@@ -6,7 +6,7 @@ const sider: SidebarConfig = {
     "/web/regexp",
     "/web/vue3-reactivity",
     "/web/cache",
-    "/web/qiankun",
+    "/web/qiankun"
   ],
   "/tools": [
     "/tools/tapable",
@@ -21,8 +21,20 @@ const sider: SidebarConfig = {
       link: "/drafts/brew-change-origin",
     },
     {
-      text: "搭建VPS",
-      link: "/drafts/vps",
+      text: "ShadowSocksR",
+      link: "/drafts/shadow-socks-r",
+    },
+    {
+      text: "v2ray",
+      link: "/drafts/v2ray",
+    },
+    {
+      text: "package.json",
+      link: "/drafts/package.json",
+    },
+    {
+      text: "node package manager",
+      link: "/drafts/package-manager",
     },
   ],
   "/todo": [
