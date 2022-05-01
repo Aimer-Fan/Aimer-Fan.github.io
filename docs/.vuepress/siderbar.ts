@@ -9,7 +9,8 @@ const sider: SidebarConfig = {
     "/web/qiankun"
   ],
   "/tools": [
-    "/tools/tapable",
+    // "/tools/tapable",
+    "/tools/vim"
   ],
   "/drafts": [
     {
