@@ -6,6 +6,10 @@ const navbar: NavbarConfig = [
     link: "/web/gcc",
   },
   {
+    text: "SQL",
+    link: "/sql/01_abstract",
+  },
+  {
     text: "工具库",
     link: "/tools/vim",
   },
@@ -16,7 +20,7 @@ const navbar: NavbarConfig = [
   {
     text: "TODO",
     link: "/todo",
-  }
+  },
 ];
 
 export default navbar;

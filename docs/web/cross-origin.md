@@ -1,4 +1,4 @@
-## 浏览器的同源策略
+# 浏览器的同源策略
 
 同源策略是一个重要的安全策略，它限制一个源的文档或者它加载的脚本如何能与另一个源的资源进行交互。它能帮助阻隔恶意文档，减少可能被攻击的媒介。
 
@@ -49,7 +49,7 @@ document.domain = "company.com"
 
 
 
-**端口号是由浏览器另行检查的。**任何对document.domain的赋值操作都会导致端口号被重写为 `null`。因此 `company.com:8080` 不能仅通过设置 `document.domain = "company.com"` 来与`company.com` 通信。必须在他们双方中都进行赋值，以确保端口号都为 `null` 。
+**端口号是由浏览器另行检查的。** 任何对document.domain的赋值操作都会导致端口号被重写为 `null`。因此 `company.com:8080` 不能仅通过设置 `document.domain = "company.com"` 来与`company.com` 通信。必须在他们双方中都进行赋值，以确保端口号都为 `null` 。
 
 
 

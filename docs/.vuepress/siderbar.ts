@@ -2,15 +2,19 @@ import type { SidebarConfig } from "@vuepress/theme-default";
 
 const sider: SidebarConfig = {
   "/web": [
+    "/web/qiankun",
+    "/web/gzip",
     "/web/gcc",
     "/web/regexp",
     "/web/vue3-reactivity",
     "/web/cache",
-    "/web/qiankun"
+    "/web/cross-origin",
+    "/web/cross-origin-resource-sharing",
+    "/web/download-file",
   ],
   "/tools": [
     // "/tools/tapable",
-    "/tools/vim"
+    "/tools/vim",
   ],
   "/drafts": [
     {
@@ -34,12 +38,19 @@ const sider: SidebarConfig = {
       link: "/drafts/package.json",
     },
     {
-      text: "node package manager",
+      text: "node 包管理工具",
       link: "/drafts/package-manager",
     },
   ],
   "/todo": [
     "/todo",
+  ],
+  "/sql": [
+    "/sql/01_abstract",
+    "/sql/02_grammar",
+    "/sql/03_select",
+    "/sql/04_operator",
+    "/sql/05_order_and_page",
   ],
 };
 

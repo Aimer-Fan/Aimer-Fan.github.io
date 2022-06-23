@@ -43,7 +43,7 @@ module.exports = {
 
 开启 Gzip 后，会发现打包后的文件中存在 `.gz` 文件。
 
-![image-20210518222808496](./image-20210518222808496.png)
+![image-20210518222808496](./img/image-20210518222808496.png)
 
 ## 开启Gzip
 
@@ -149,6 +149,6 @@ gzip使用环境:http,server,location,if(x),一般把它定义在nginx.conf的ht
 
 如果发现 Network 中没有 Content-Encoding 字段，可以 右键表头 > Response Headers > Conten-Encoding，打开此选项。
 
-![image-20210518223909095](./image-20210518223909095.png)
+![image-20210518223909095](./img/image-20210518223909095.png)
 
-![image-20210518223646529](./image-20210518223646529.png)
+![image-20210518223646529](./img/image-20210518223646529.png)
