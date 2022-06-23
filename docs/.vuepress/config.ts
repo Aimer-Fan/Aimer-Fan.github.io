@@ -1,16 +1,16 @@
-import type { DefaultThemeOptions } from "vuepress";
+import { defaultTheme } from "vuepress";
 import { defineUserConfig } from "vuepress";
 import navbar from "./navbar";
 import siderbar from "./siderbar";
 
-export default defineUserConfig<DefaultThemeOptions>({
+export default defineUserConfig({
   lang: "zh-CN",
   title: "AimerFan",
   description: "aimer fan's blog repo.",
 
-  themeConfig: {
+  theme: defaultTheme({
     logo: "/images/background.png",
     sidebar: siderbar,
     navbar: navbar
-  },
+  }),
 });
