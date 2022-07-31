@@ -46,11 +46,12 @@ const sider: SidebarConfig = {
     "/todo",
   ],
   "/sql": [
-    "/sql/01_abstract",
-    "/sql/02_grammar",
-    "/sql/03_select",
-    "/sql/04_operator",
-    "/sql/05_order_and_page",
+    "/sql/01-abstract",
+    "/sql/02-grammar",
+    "/sql/03-select",
+    "/sql/04-operator",
+    "/sql/05-order-and-page",
+    "/sql/06-multiple-table",
   ],
 };
 

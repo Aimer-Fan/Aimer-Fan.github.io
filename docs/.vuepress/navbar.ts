@@ -7,7 +7,7 @@ const navbar: NavbarConfig = [
   },
   {
     text: "SQL",
-    link: "/sql/01_abstract",
+    link: "/sql/01-abstract",
   },
   {
     text: "工具库",
