@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.48">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <title>Nginx | AimerFan</title><meta name="description" content="aimer fan's blog repo.">
+    <link rel="modulepreload" href="/assets/app.cbf35e07.js"><link rel="modulepreload" href="/assets/index.html.a8bb5dbf.js"><link rel="modulepreload" href="/assets/index.html.8690e658.js"><link rel="prefetch" href="/assets/index.html.1e88ebbb.js"><link rel="prefetch" href="/assets/index.html.cedfaa0c.js"><link rel="prefetch" href="/assets/Git_GitHub.html.1ee39485.js"><link rel="prefetch" href="/assets/index.html.9cdccac4.js"><link rel="prefetch" href="/assets/index.html.f6641bb3.js"><link rel="prefetch" href="/assets/index.html.4e6e5c05.js"><link rel="prefetch" href="/assets/brew-change-origin.html.836badd5.js"><link rel="prefetch" href="/assets/package-manager.html.1b1c9b42.js"><link rel="prefetch" href="/assets/package.json.html.4631f4f2.js"><link rel="prefetch" href="/assets/permission.html.153538bb.js"><link rel="prefetch" href="/assets/shadow-socks-r.html.d3305835.js"><link rel="prefetch" href="/assets/v2ray.html.fad86528.js"><link rel="prefetch" href="/assets/shell.html.a9cd359c.js"><link rel="prefetch" href="/assets/01-abstract.html.f0b6a374.js"><link rel="prefetch" href="/assets/02-grammar.html.661b7ff9.js"><link rel="prefetch" href="/assets/03-select.html.aeda8c6e.js"><link rel="prefetch" href="/assets/04-operator.html.475e4f3f.js"><link rel="prefetch" href="/assets/05-order-and-page.html.a3dab98a.js"><link rel="prefetch" href="/assets/06-multiple-table.html.c304e491.js"><link rel="prefetch" href="/assets/index.html.101b2f28.js"><link rel="prefetch" href="/assets/tapable.html.faa36181.js"><link rel="prefetch" href="/assets/vim.html.99ce84fd.js"><link rel="prefetch" href="/assets/cache.html.615fd64f.js"><link rel="prefetch" href="/assets/cross-origin-resource-sharing.html.f46eac43.js"><link rel="prefetch" href="/assets/cross-origin.html.b18fe09e.js"><link rel="prefetch" href="/assets/download-file.html.d2e313ab.js"><link rel="prefetch" href="/assets/gcc.html.222e57c3.js"><link rel="prefetch" href="/assets/gzip.html.91dd2ff1.js"><link rel="prefetch" href="/assets/qiankun.html.a5d58a01.js"><link rel="prefetch" href="/assets/regexp.html.215d01f7.js"><link rel="prefetch" href="/assets/vue3-reactivity.html.bcb7e472.js"><link rel="prefetch" href="/assets/index.html.e7560b41.js"><link rel="prefetch" href="/assets/404.html.265028f6.js"><link rel="prefetch" href="/assets/index.html.dae261ee.js"><link rel="prefetch" href="/assets/index.html.221a0ddc.js"><link rel="prefetch" href="/assets/Git_GitHub.html.b71f641d.js"><link rel="prefetch" href="/assets/index.html.a219482e.js"><link rel="prefetch" href="/assets/index.html.399c02c1.js"><link rel="prefetch" href="/assets/index.html.737f5985.js"><link rel="prefetch" href="/assets/brew-change-origin.html.85494073.js"><link rel="prefetch" href="/assets/package-manager.html.430b6d12.js"><link rel="prefetch" href="/assets/package.json.html.70aa6e0f.js"><link rel="prefetch" href="/assets/permission.html.c3bfacf6.js"><link rel="prefetch" href="/assets/shadow-socks-r.html.4d231b0f.js"><link rel="prefetch" href="/assets/v2ray.html.ce34de8f.js"><link rel="prefetch" href="/assets/shell.html.8bcf8348.js"><link rel="prefetch" href="/assets/01-abstract.html.9f66f3d0.js"><link rel="prefetch" href="/assets/02-grammar.html.9fe43eef.js"><link rel="prefetch" href="/assets/03-select.html.1deb7dbb.js"><link rel="prefetch" href="/assets/04-operator.html.fb89566a.js"><link rel="prefetch" href="/assets/05-order-and-page.html.ffce7199.js"><link rel="prefetch" href="/assets/06-multiple-table.html.a0377bf3.js"><link rel="prefetch" href="/assets/index.html.0a219270.js"><link rel="prefetch" href="/assets/tapable.html.c39dfe04.js"><link rel="prefetch" href="/assets/vim.html.e448d7cd.js"><link rel="prefetch" href="/assets/cache.html.83b1f755.js"><link rel="prefetch" href="/assets/cross-origin-resource-sharing.html.f5fa5b30.js"><link rel="prefetch" href="/assets/cross-origin.html.4032a9a4.js"><link rel="prefetch" href="/assets/download-file.html.186265ce.js"><link rel="prefetch" href="/assets/gcc.html.ee8d081b.js"><link rel="prefetch" href="/assets/gzip.html.9eb183a9.js"><link rel="prefetch" href="/assets/qiankun.html.ab499129.js"><link rel="prefetch" href="/assets/regexp.html.80ece7c3.js"><link rel="prefetch" href="/assets/vue3-reactivity.html.d546a9b9.js"><link rel="prefetch" href="/assets/index.html.5b0e47b3.js"><link rel="prefetch" href="/assets/404.html.ea6eaeaa.js"><link rel="prefetch" href="/assets/404.4d66fe86.js"><link rel="prefetch" href="/assets/Layout.a4a5a9b1.js">
+    <link rel="stylesheet" href="/assets/style.acf36ec1.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container no-sidebar"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/" class=""><img class="logo" src="/images/background.png" alt="AimerFan"><span class="site-name can-hide">AimerFan</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/web/gcc" class="" aria-label="Web前端"><!--[--><!--]--> Web前端 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/sql/01-abstract" class="" aria-label="SQL"><!--[--><!--]--> SQL <!--[--><!--]--></a></div><div class="navbar-item"><a href="/tools/vim" class="" aria-label="工具库"><!--[--><!--]--> 工具库 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/drafts/permission" class="" aria-label="草稿箱"><!--[--><!--]--> 草稿箱 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/todo" class="" aria-label="TODO"><!--[--><!--]--> TODO <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/web/gcc" class="" aria-label="Web前端"><!--[--><!--]--> Web前端 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/sql/01-abstract" class="" aria-label="SQL"><!--[--><!--]--> SQL <!--[--><!--]--></a></div><div class="navbar-item"><a href="/tools/vim" class="" aria-label="工具库"><!--[--><!--]--> 工具库 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/drafts/permission" class="" aria-label="草稿箱"><!--[--><!--]--> 草稿箱 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/todo" class="" aria-label="TODO"><!--[--><!--]--> TODO <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="nginx" tabindex="-1"><a class="header-anchor" href="#nginx" aria-hidden="true">#</a> Nginx</h1><h2 id="nginx简介" tabindex="-1"><a class="header-anchor" href="#nginx简介" aria-hidden="true">#</a> Nginx简介</h2><h3 id="_1、什么是nginx" tabindex="-1"><a class="header-anchor" href="#_1、什么是nginx" aria-hidden="true">#</a> 1、什么是Nginx?</h3><p>​ Nginx是一个高性能的HTTP和反向代理服务器，特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好。</p><p>​ Nginx专为性能优化而开发，性能是尤其重要的考量，实现上非常注重效率，能经受高负载的考验，有报告表明能支持高达50000个并发连接数。</p><h3 id="_2、反向代理" tabindex="-1"><a class="header-anchor" href="#_2、反向代理" aria-hidden="true">#</a> 2、反向代理</h3><p>（1）正向代理</p><p>​ 在客户端（浏览器）配置代理服务器，通过代理服务器进行访问互联网</p><p>（2）反向代理</p><p>​ 反向代理，其实客户端对代理是无感知的，因为客户端不需要做任何配置就可以访问，我们只需要将请求发送到反向代理服务器，由反向代理服务器去选择目标服务器获取数据后，在返回给客户端，此时反向代理服务器和目标服务器对外就是一个服务器，暴露的是代理服务器地址，隐藏了真实服务器地址。</p><h3 id="_3、负载均衡" tabindex="-1"><a class="header-anchor" href="#_3、负载均衡" aria-hidden="true">#</a> 3、负载均衡</h3><p>​ 客户端发送多个请求到服务器，服务器处理请求，有一些可能要与数据库进行交互，服务器处理完毕后，再将结果返回给客户端。</p><p>​ 这种架构模式对应早期的系统相对单一，并发请求相对较少的情况下是比较适合的，成本也低。但是随着信息数量的不断增加、访问量和数据量的飞速增长，以及系统业务的复杂度增加，这种架构会造成服务器响应客户端的请求日益缓慢，并发量特别大的时候，还容易造成服务器直接崩溃。很明显这是由于服务器性能瓶颈造成的问题，那么怎么解决这种情况呢？</p><p>​ 这个时候集群的概念就产生了。单个服务器解决不了，我们增加服务器的数量，然后将请求分发到各个服务器上，将原来请求集中到单个服务器上的请求改为将请求分发到多个服务器上，将负载分发到不同的服务器，也就是我们说的负载均衡。</p><h3 id="_4、动静分离" tabindex="-1"><a class="header-anchor" href="#_4、动静分离" aria-hidden="true">#</a> 4、动静分离</h3><p>​ 为了加快网站的解析速度，可以把动态页面和静态页面由不同的服务器开解析，加快解析速度。降低原来单个服务器的压力。</p><h2 id="nginx-的安装" tabindex="-1"><a class="header-anchor" href="#nginx-的安装" aria-hidden="true">#</a> Nginx 的安装</h2><div class="language-(shell) ext-(shell) line-numbers-mode"><pre class="language-(shell)"><code>sudo apt-get install nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>Ubuntu安装之后的文件结构大致如下：</p><ul><li><p>所有的配置文件都在/etc/nginx下，并且每个虚拟主机已经安排在了/etc/nginx/sites-available下</p></li><li><p>程序文件在/usr/sbin/nginx</p></li><li><p>日志放在了/var/log/nginx中</p></li><li><p>并已经在/etc/init.d/下创建了启动脚本nginx</p></li><li><p>默认的虚拟主机的目录设置在了/var/www/nginx-default (有的版本默认的虚拟主机的目录设置在了/var/www, 请参考/etc/nginx/sites-available里的配置)</p></li></ul><h2 id="nginx-的常用指令" tabindex="-1"><a class="header-anchor" href="#nginx-的常用指令" aria-hidden="true">#</a> Nginx 的常用指令</h2><ul><li><p>查看Nginx版本号</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code>./nginx -v
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li><li><p>启动</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">sudo</span> /etc/init.d/nginx start
+<span class="token comment"># 或者</span>
+./nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>停止</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">sudo</span> /etc/init.d/nginx stop
+<span class="token comment"># 或者</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li></ul><p>./nginx -s stop ```</p><ul><li>重新加载<div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">sudo</span> /etc/init.d/nginx reload
+<span class="token comment"># 或者</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li></ul><p>./nginx -s reload ```</p><h2 id="nginx-的配置文件" tabindex="-1"><a class="header-anchor" href="#nginx-的配置文件" aria-hidden="true">#</a> Nginx 的配置文件</h2><p>nginx.config配置文件主要分为三部分：</p><h3 id="_1、全局块" tabindex="-1"><a class="header-anchor" href="#_1、全局块" aria-hidden="true">#</a> 1、全局块</h3><p>​ 从配置文件开始到events块之间的内容，主要会设置一些影响nginx服务器整体运行的配置指令，主要包括配置运行Nginx服务器的用户（组）、允许生成的worker process数，进程PID存放路径、日志存放路径和类型以及配置文件的引入等。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>worker_processes 1;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>​ 这是Nginx服务器并发处理服务的关键配置马，worker_processes值越大，可以支持的并发处理量也越多，但是会受到硬件、软件等设备的制约。</p><h3 id="_2、-events块" tabindex="-1"><a class="header-anchor" href="#_2、-events块" aria-hidden="true">#</a> 2、 events块</h3><p>​ events块涉及的指令主要影响Nginx服务器与用户的网络链接，常用的设置包括是否开启对多work_process下的网络连接进行序列化，是否 允许同时接收多个网络连接，选取哪种事件驱动模型来处理连接请求，每个workprocess可以同时支持的最大连接数等。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>events {
+	worker_connections 1024;
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上述的例子就表示每个workprocess支持的最大连接数为1024。</p><p>这部分的配置对Nginx的性能影响较大，在实际中应该灵活配置。</p><h3 id="_3、http块" tabindex="-1"><a class="header-anchor" href="#_3、http块" aria-hidden="true">#</a> 3、http块</h3><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>http {
+	include		mime.types;
+	default_type application/octet-stream;
+	
+	sendfile	on;
+	
+	keepalive_timeout	65;
+	
+	server {
+		listen	80;
+		server_name	localhost;
+		
+		location / {
+			root	html;
+			index	index.html index.htm;
+		}
+		
+		error_page	500 502 503 504 /50x.html;
+		location = /50x.html {
+			root	html;
+		}
+	}
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>​ 这部分是Nginx服务器中配置最频繁的部分，代理、缓存和日志定义等绝大多数功能和第三方模块的配置都在这里。需要注意的是：http块包括http全局快、server块。</p><ol><li><p>http 全局块</p><p>​ http全局块配置的指令包括文件引入，MIME-TYPE定义、日志自定义、连接超时时间、单链接请求数上限等。</p></li><li><p>server块</p><p>​ 这块和虚拟主机有密切关系，虚拟主机从用户角度看，和一台独立的硬件主机是完全一样的，该技术的产生是为了节省互联网服务器硬件成本。</p><p>​ 每个http块可以包括多个server块，而每个server块就相当于一个虚拟主机。</p><p>​ 而每个server块也分为全局server块，以及可以同时包含多个location块。</p><ol><li><p>全局server块</p><p>​ 最常见的配置是本虚拟机主机的监听配置和本虚拟主机的名称或IP配置。</p></li><li><p>location块</p><p>​ 一个server块可以配置多个location块。</p><p>​ 这块的主要作用是基于Nginx服务器接收到的请求字符串（例如server_name/uri-string），对虚拟主机名称（也可以是IP别名）之外的字符串（例如：前面的/uri-string）进行匹配，对特定的请求进行处理。地址定向、数据缓存和应答控制等 功能，还有许多第三方模块的配置也在这里进行。</p></li></ol></li></ol><h2 id="配置反向代理" tabindex="-1"><a class="header-anchor" href="#配置反向代理" aria-hidden="true">#</a> 配置反向代理</h2><ol><li>对所有的请求都进行转发。</li></ol><div class="language-config ext-config line-numbers-mode"><pre class="language-config"><code>http {
+    server {
+		location / {
+            # 配置反向代理（请求转发）
+            proxy_pass http://127.0.0.1:8080;
+        }
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2"><li><p>根据请求关键字分别转发至不同服务器。</p><p>请求中带有edu会被转发至8080端口，请求中带有vod会转发至8081端口。</p></li></ol><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>http {
+    server {
+		location ~ /edu/ {
+            # 配置反向代理（请求转发）
+            proxy_pass http://127.0.0.1:8080;
+        }
+        location ~ /vod/ {
+            # 配置反向代理（请求转发）
+            proxy_pass http://127.0.0.1:8081;
+        }
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>location指令说明：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>location [ = | ~ | ~* | ^~ ] uri {}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><table><thead><tr><th>指令名</th><th>说明</th></tr></thead><tbody><tr><td>=</td><td>用于不含正则表达式的uri前，要求请求字符串与uri严格匹配，如果匹配成功，就继续向下搜索并立即处理该请求。</td></tr><tr><td>~</td><td>用于表示uri包含正则表达式，并且区分大小写。</td></tr><tr><td>~*</td><td>用于表示uri包含正则表达式，并且不区分大小写。</td></tr><tr><td>^~</td><td>用于不含正则表达式的uri前，要求Nginx服务器找到标识uri和请求字符串匹配度最高的location后，立即使用此location处理请求，而不再使用location块中的正则uri和请求字符串做匹配。</td></tr></tbody></table><p>**注意：**如果uri包含正则表达式，则必须要有~或者~*标识。</p><h2 id="配置负载均衡" tabindex="-1"><a class="header-anchor" href="#配置负载均衡" aria-hidden="true">#</a> 配置负载均衡</h2><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>http {
+	# 添加upstream定义
+	upsteam myserver {
+		server 127.0.0.1:8080;
+		server 127.0.0.1:8081;
+	}
+    server {
+		location / {
+            # 在请求转发时指向配置的upstream
+            proxy_pass http://myserver;
+            root html;
+            index index.html index.htm;
+        }
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>负载均衡策略：</p><ol><li><p>轮询（默认）</p><p>每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器宕机，能自动剔除。</p></li><li><p>weight（权重）</p><p>weight代表权重，默认为1，权重越高，被分配的客户端越多。</p><p>指定轮询几率，weight和访问比率成正比，用于后端服务器性能不均的情况。例如：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>upstream server_pool {
+	server 192.168.5.21 weight=10;
+	server 192.168.5.22 weight=10;
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>ip_hash</p><p>每个请求按照访问ip的hash结果分配，这样每个访客固定访问一个后端服务器。这样可以解决session的问题。例如：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>upstream server_pool {
+	ip_hash;
+	server 192.168.5.21;
+	server 192.168.5.22;
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>faie（第三方）</p><p>按照后端服务器的响应时间来分配请求，响应时间短的优先分配。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>upstream server_pool {
+	server 192.168.5.21;
+	server 192.168.5.22;
+	fair;
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li></ol><h2 id="动静分离" tabindex="-1"><a class="header-anchor" href="#动静分离" aria-hidden="true">#</a> 动静分离</h2><p>​ Nginx动静分离简单来说就是把动态跟静态请求分开，不能理解成只是单纯的把动态页面和静态页面物理分离。严格意义上说应该是动态请求跟静态请求分开，可以理解成使用Nginx 处理静态页面，Tomcat处理动态页面。</p><p>​ 动静分离从目前实现角度来讲大致分为两种，一种是纯粹把静态文件独立成单独的域名，放在独立的服务器上，也是目前主流推崇的方案；另外一种方法就是动态跟静态文件混合在一起发布，通过nginx来分开。</p><p>​ 通过location指定不同的后缀名实现不同的请求转发。通过expires参数设置，可以使浏览器缓存过期时间，减少与服务器之前的请求和流量。</p><p>​ 具体 Expires定义：是给一个资源设定一个过期时间，也就是说无需去服务端验证，直接通过浏览器自身确认是否过期即可，所以不会产生额外的流量。此种方法非常适合不经常变动的资源。（如果经常更新的文件，不建议使用 ExPireS 来缓存），这里设置 3d ，表示在这 3 天之内访问这个 URL ，发送一个请求，比对服务器该文件最后更新时间没有变化，则不会从服务器抓取，返回状态码 304 ，如果有修改，则直接从服务器重新下载，返回状态码 200。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>http {
+    server {
+    	# 文件在/data/www/下，访问的路径为 192.168.5.21/www
+		location /www/ {
+            root /data/;
+            index index.html index.htm;
+        }
+        # 文件在/data/image/下，访问的路径为 192.168.5.21/image
+        location /image/ {
+            root /data/;
+            # 表示列出文件夹中的文件列表
+            autoindex on;
+        }
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="nginx高可用配置-keepalived" tabindex="-1"><a class="header-anchor" href="#nginx高可用配置-keepalived" aria-hidden="true">#</a> Nginx高可用配置（keepalived）</h2><p>处理一台nginx服务器宕机的情况。当主服务器nginx服务器宕机后自动转发至备份服务器。</p><ol><li><p>安装keepalived</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>sudo apt-get install keepalived
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>安装完成，会生成 /etc/keepalived/ 目录，该目录是keepalived的配置文件目录。</p></li><li><p>修改keepalived.config配置文件</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code># 全局配置
+global_defs {
+	notification_email {
+		acassen@firewall.loc
+		failover@firewall.loc
+		sysadmin@firewall.loc
+	}
+	notification_email_from Alexandre.Cassen@firewall.loc
+	smtp_server 192.168.17.129
+	smtp_connect_timeout 30
+	router_id LVS_DEVELBACK # 访问到主机
+}
+# 脚本配置
+vrrp_script chk_http_port {
+	script &quot;/usr/local/src/nginx_check.sh&quot;
+	interval 2 # 检测脚本执行的间隔
+	weight 2 # 权重
+}
+# 虚拟ip的配置
+vrrp_instanceVI_1 {
+	state MASTER # 备份服务器上将MASTER改为BACKUP
+	interface ens33 # 网卡
+	virtual_router_id 51 # 主、备机的virtual_router_id必须相同
+	priority 100 # 主、备机取不同的优先级，主机值较大（100），备份机值较小（90）
+	advert_int 1 # 每隔多少时间发送心跳
+	authentication { # 校验权限方式
+		auth_type PASS
+		auth_pass 1111
+	}
+	virtual_ipaddress {
+		192.168.17.50 # VRRP H虚拟地址
+	}
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>在/usr/local/src添加检测脚本</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>#!/bin/bash
+A=`ps -C nginx -no-header |wc -l`
+if [ $A -eq 0];then
+	/usr/local/nginx/sbin/nginx
+	sleep 2
+	if [`ps -C nginx --noheader |wc -l` -eq 0];then
+		killall keepalived
+	fi
+fi
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>启动nginx</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>./nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li><li><p>启动keepalived</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>systemctl start keepalived.serveice
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li><li><p>查看进程服务</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>ps -ef | grep keepalived
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li></ol><h2 id="nginx原理" tabindex="-1"><a class="header-anchor" href="#nginx原理" aria-hidden="true">#</a> Nginx原理</h2><p><img src="/assets/原理图.8edc0421.png" alt="原理图"></p><p><img src="/assets/工作模式.9f11c160.png" alt="工作模式"></p><ol><li><p>一个master和多个worker有好处</p><p>​ 可以使用nginx -s reload 热部署，利于nginx进行热部署操作。</p><p>​ 首先，对于每个worker进程来说，独立的进程，不需要加锁，所以省掉了锁带来的开销， 同时在编程以及问题查找时，也会方便很多。其次，采用独立的进程，可以让互相之间不会 影响， 一 个进程退出后，其它进程还在工作，服务不会中断，master进程则很快启动新的 worker进程。当然，worker进程的异常退出，肯定是程序有bug 了，异常退出，会导致当 前worker上的所有请求失败，不过不会影响到所有请求，所以降低了风险。</p></li><li><p>需要设置多少个worker</p><p>Nginx同redis类似都采用了io多路复用机制，每个worker都是一个独立的进程，但每个进程只有一个主线程，通过异步非阻塞的方式来处理请求，即使是成千上万请求也不在话下。每个worker的线程可以把一个cpu的性能发挥到极致。所以worker的数量和cpu数相等是最适宜的。设少了会浪费cpu，设多了会造成cpu频繁切换上下文带来的损耗。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code># 设置worker数量
+worker_process 4
+# worker绑定cpu（4worker绑定4cpu）
+worker_cpu_affinity 0001 0010 0100 1000
+
+# worker绑定cpu（4worker绑定8cpu中的4个）
+worker_cpu_affinity 00000001 00000010 00000100 00001000
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li></ol><p>连接数 worker_connection</p><p>​ 这个值是表示每个 worker 进程所能建立连接的最大值，所以，一个 nginx 能建立的最大连接数，应该是 worker_connections * worker_processes。当然，这里说的是最大连接数，对于HTTP请求本地资源来说，能够支持的最大并发数量是 worker_connections * worker_processes，如果是支持 httP 1.1 的浏览器每次访问要占两个连接，所以普通的静态访问最大并发数是 worker_connections * worker_processes / 2，而如果是 HTTp 作为反向代理来说，最大并发数量应该是 worker_connections * worker_processes / 4 。因为作为反向代理服务器，每个并发会建立与客户端的连接和与后端服务的连接，会占用两个连接。</p></div><!--[--><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 1261105760@qq.com">AimerFan</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/assets/app.cbf35e07.js" defer></script>
+  </body>
+</html>
